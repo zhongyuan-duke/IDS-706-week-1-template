@@ -1,5 +1,32 @@
 ## Create your first project for Data Engineering Systems (IDS 706)
 
+## Two approaches:
+
+#### GitHub Repo Python Template (Local Setup Workflow)
+
+- Create a GitHub repository for your project.
+- Clone/Start the repository locally or use GitHub Codespaces without a container.
+- Create project files: Makefile, XX.py, test_XX.py, and requirements.txt.
+- Set up a Python virtual environment and install dependencies using either pip install -r requirements.txt or make install.
+- Write your Python code and tests in the appropriate files.
+- Run Makefile commands as needed: make install, make test, make format, make lint, make clean.
+- Commit and push your changes to GitHub.
+- Enable GitHub Actions for automation/Continuous Integration.
+
+#### Cloud-based Containerized Setup Workflow (With Dev Container)
+
+- Create a GitHub repository.
+- Launch a Codespace from the repository.
+- Add a Dev Container configuration using VS Code.
+- Create project files: Makefile, XX.py, test_XX.py, requirements.txt.
+- Rebuild the container to apply changes.
+- Write your Python code and tests.
+- Run Makefile commands as needed: make test, make format, make lint, make clean.
+- Commit and push your changes.
+- Enable GitHub Actions for automation/Continuous Integration.
+
+
+
 ## Create a new GitHub Repository
 1. Go to [GitHub](https://github.com) and create a new repository named e.g., `IDS706_python_template`.      
    - Make sure to select "Public" or "Private" based on your preference.
