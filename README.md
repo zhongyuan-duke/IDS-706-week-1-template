@@ -8,7 +8,7 @@
 3. Click on "Create repository".
 4. Click codespaces and then "Create codespace on main".
 
-## Create new files in the repository in the terminal
+## Create new files in the repository (using the terminal or manually)
 ```bash
 touch Makefile
 touch hello.py
@@ -16,12 +16,15 @@ touch test_hello.py
 touch requirements.txt
 ```
 
-## Setup Python Environment
-To create and activate a virtual environment (I would suggest using the same name for the environment as the repo name):
+## Setup Python Environment (if you're not using a Dev Container)
+If you're working outside of a dev container, you can manually create and activate a virtual environment. If you do so, for consistency, it's recommended to name the environment the same as your repository.
+
 ```bash
 python3 -m venv ~/.IDS706_python_template
 source ~/.IDS706_python_template/bin/activate
 ```
+
+
 ## Create a Makefile
 ```makefile
 install:
@@ -53,10 +56,18 @@ black
 pytest-cov
 ```
 
-## Run the Makefile
+## VS Code Dev Containers (Suggested)
+Open a sample in a container by pressing shift+command+P, then select `Dev Containers: Add Development Container Configuration Files...`. Choose the Python 3.11 template, and it will create the necessary files for you.
+
+#### Rebuild or update your container
+after you make changes to your container, such as installing a packages, you'll rebuild your container for your changes to take effect. by pressing shift+command+P, then select `Dev Containers: Rebuild Container` or `Codespaces: Rebuild Container` command so the modifications are picked up.  
+
+
+## Run the Makefile (required if you do not use Dev Containers)
 ```bash 
 make install
 ```
+
 
 ## Create a simple Python script
 ```python
@@ -108,7 +119,9 @@ git push origin main
 ``` 
 ## View your repository
 
-## Enable GitHub Actions (Optional)
+## Enable GitHub Actions (Optional for now)
+(If you're feeling overwhelmed, feel free to skip this step for now — you can always come back to it later when you're ready to explore GitHub Actions.)
+
 1. Go to your repository on GitHub.
 2. Click on the "Actions" tab.
 3. Click on "New workflow".
@@ -143,7 +156,8 @@ jobs:
 6. Commit and push this file to your repository.
 7. GitHub Actions will run automatically on every push or pull request!
 
-## View the Actions tab (Optional)
+## View the Actions tab 
+
 1. Go to the "Actions" tab in your repository.
 2. You should see the workflow running.
 3. Click on the latest workflow run to see the details.
@@ -155,6 +169,7 @@ You have successfully created a Python template project for Data Engineering Sys
 This template provides a structured way to set up a Python project with essential tools for development, testing, and continuous integration. It includes:
 - A `Makefile` for easy command execution.
 - A virtual environment setup for dependency management.
+- A devcontainer configuration for GitHub Codespaces
 - A simple Python script with functions.
 - Unit tests to ensure code correctness.
 - GitHub Actions for continuous integration to automate linting and testing.
@@ -163,6 +178,7 @@ This template provides a structured way to set up a Python project with essentia
 ## Additional Resources
 - [GitHub Documentation](https://docs.github.com/en)
 - [Python Virtual Environments](https://docs.python.org/3/tutorial/venv.html)
+- [GitHub Dev-Container Documentation](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-python-project-for-codespaces)
 - [Makefile Documentation](https://www.gnu.org/software/make/manual/make.html)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
