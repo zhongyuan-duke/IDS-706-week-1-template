@@ -4,28 +4,23 @@
 
 #### GitHub Repo Python Template (Local Setup Workflow)
 
-- Create a GitHub repository for your project.
-- Clone/Start the repository locally or use GitHub Codespaces without a container.
-- Create project files: Makefile, XX.py, test_XX.py, and requirements.txt.
-- Set up a Python virtual environment and install dependencies using either pip install -r requirements.txt or make install.
-- Write your Python code and tests in the appropriate files.
-- Run Makefile commands as needed: make install, make test, make format, make lint, make clean.
-- Commit and push your changes to GitHub.
-- Enable GitHub Actions for automation/Continuous Integration.
+- Clone/Start the repository locally or use GitHub Codespaces without a container.
+- Set up a Python virtual environment (optional) and install dependencies using either pip install -r requirements.txt or make install.
 
 #### Cloud-based Containerized Setup Workflow (With Dev Container)
 
 - Create a GitHub repository.
 - Launch a Codespace from the repository.
 - Add a Dev Container configuration using VS Code.
-- Create project files: Makefile, XX.py, test_XX.py, requirements.txt.
 - Rebuild the container to apply changes.
-- Write your Python code and tests.
-- Run Makefile commands as needed: make test, make format, make lint, make clean.
-- Commit and push your changes.
+
+Once your environment is ready, the following steps are common to both approaches:
+
+- Create project files: Makefile, XX.py, test_XX.py, and requirements.txt.
+- Write your Python code and tests in the appropriate files.
+- Run Makefile commands as needed: make install, make test, make format, make lint, make clean.
+- Commit and push your changes to GitHub.
 - Enable GitHub Actions for automation/Continuous Integration.
-
-
 
 ## Create a new GitHub Repository
 1. Go to [GitHub](https://github.com) and create a new repository named e.g., `IDS706_python_template`.      
@@ -146,8 +141,7 @@ git push origin main
 ``` 
 ## View your repository
 
-## Enable GitHub Actions (Optional for now)
-(If you're feeling overwhelmed, feel free to skip this step for now — you can always come back to it later when you're ready to explore GitHub Actions.)
+## Enable GitHub Actions
 
 1. Go to your repository on GitHub.
 2. Click on the "Actions" tab.
@@ -205,6 +199,8 @@ This template provides a structured way to set up a Python project with essentia
 ## Additional Resources
 - [GitHub Documentation](https://docs.github.com/en)
 - [Python Virtual Environments](https://docs.python.org/3/tutorial/venv.html)
+- [Installing Python and conda](https://www.practicaldatascience.org/notebooks/PDS_not_yet_in_coursera/00_setup_env/setup_python.html)
+- [Setting Up Visual Studio Code](https://www.practicaldatascience.org/notebooks/PDS_not_yet_in_coursera/00_setup_env/setup_vscode.html)
 - [GitHub Dev-Container Documentation](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-python-project-for-codespaces)
 - [Makefile Documentation](https://www.gnu.org/software/make/manual/make.html)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
